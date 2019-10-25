@@ -1,0 +1,9 @@
+<app-background [background]="background"></app-background>
+<app-color [color]="color"></app-color>
+<app-width [width]="width"></app-width>
+<div class="progress-bar-container" [style.backgroundColor]="background">
+  <div class="progress" [ngStyle]="{
+    backgroundColor: color,
+    width: width + '%'
+  }"></div>
+</div>
